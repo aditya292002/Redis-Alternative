@@ -37,8 +37,8 @@ void Test::asyncHandleHttpRequest(const HttpRequestPtr &req,
         resp->setStatusCode(k200OK);
         resp->setBody("Key-Value pair stored successfully");
         callback(resp);
-    } 
-    
+    }
+
     else {
         // Extract the key from the request path
         std::cout << "GET request" << std::endl;
@@ -46,7 +46,7 @@ void Test::asyncHandleHttpRequest(const HttpRequestPtr &req,
         for(auto it = keyValueStore.begin(); it != keyValueStore.end(); ++it) {
             std::cout << it->first << " => " << it->second << std::endl;
         }
-        
+
 
         auto key = req->getParameter("key");
         std::cout << "Key: " << key << std::endl;
