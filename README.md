@@ -1,6 +1,6 @@
 # Redis-Alternative
 ## Overview
-Redis-Alternative is a lightweight, high-performance key-value store designed to provide an alternative to Redis. It supports basic CRUD operations and is accessible via a RESTful API.
+Redis-Alternative is a lightweight, high-performance key-value store designed to provide an alternative to Redis. It supports all the common Redis operations and is accessible via a RESTful API.
 
 ## Installation
 To run the project, you have two options: setting up the Drogon environment on your machine or using the provided Docker image.
