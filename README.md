@@ -59,3 +59,25 @@ Example:
     "seconds": 60
 }
 ```
+
+## Interfaces
+- Python Client (python_client.py): Contains a class (KeyValueStoreClient) with methods to interact with your API (store_value and retrieve_value).
+- CLI Client (cli_client.py): Uses argparse to provide a command-line interface. This file imports and uses the KeyValueStoreClient to handle the API requests based on user input.
+
+## How to Run:
+Python Client Usage:
+
+```python
+from interface.python_client import KeyValueStoreClient
+
+client = KeyValueStoreClient()
+client.store_value('name', 'aditya')
+print(client.retrieve_value('name'))
+```
+
+CLI Client Usage:
+
+```bash
+python3 interface/cli_client.py store name --value aditya
+python3 interface/cli_client.py retrieve name
+```
