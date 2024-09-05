@@ -81,3 +81,12 @@ CLI Client Usage:
 python3 interface/cli_client.py store name --value aditya
 python3 interface/cli_client.py retrieve name
 ```
+
+
+/**
+ * Contact
+ * For any questions or suggestions, please open an issue or contact the project maintainer.
+ * 
+ * Maintainer
+ * Email: keshariaditya90@gmail.com
+ */
