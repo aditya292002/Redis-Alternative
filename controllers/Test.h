@@ -19,7 +19,7 @@ public:
     // PATH_ADD("/",Get,Post);
     PATH_ADD("/set",Post);
     PATH_ADD("/get", Get);  // Route for GET /get/{key}
+    PATH_ADD("/del", Delete);  
+    PATH_ADD("/patch", Patch); 
     PATH_LIST_END
-private:
-    std::unordered_map<std::string, std::string> keyValueStore;
 };
